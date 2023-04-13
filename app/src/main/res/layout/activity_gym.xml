@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GymActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edNameGym"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:hint="@string/hint_new_exercise"
+        android:textColorHint="@color/text_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextV1_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/edNameGym" />
+
+        <EditText
+            android:id="@+id/editTextV1_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_1"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_1"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_1"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_2"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_2"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_3"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_3"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_4"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_4"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_5"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_5"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_6"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_6"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_7"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_7"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_8"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_8"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV1_10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/weight_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV1_9"
+            app:layout_constraintStart_toStartOf="@+id/editTextV1_9"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV1_9"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/edNameGym" />
+
+        <EditText
+            android:id="@+id/editTextV2_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_1"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_2"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_2"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_3"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_3"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_4"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_4"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_5"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_5"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_6"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_6"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_7"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_7"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_8"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_8"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextV2_10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/quantity_hint"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/text_hint"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/editTextV2_9"
+            app:layout_constraintStart_toStartOf="@+id/editTextV2_9"
+            app:layout_constraintTop_toBottomOf="@+id/editTextV2_9"
+            tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/bSaveExe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/button_ex"
+        android:text="@string/button_save_exercise"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextV1_10" />
+
+        <ImageButton
+            android:id="@+id/addValues2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_1"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_1"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light" />
+
+        <ImageButton
+            android:id="@+id/addValues3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_2"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_2"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/addValues4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_3"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_3"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/addValues5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_4"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_4"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/addValues6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_5"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_5"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/addValues7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_6"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_6"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/addValues8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_7"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_7"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/addValues9"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_8"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_8"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/addValues10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_9"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_1"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_9"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imAllClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextV2_10"
+            app:layout_constraintStart_toEndOf="@+id/editTextV2_10"
+            app:layout_constraintTop_toTopOf="@+id/editTextV2_10"
+            app:srcCompat="@drawable/ic_all_close_value"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues3"
+            app:layout_constraintStart_toEndOf="@+id/addValues3"
+            app:layout_constraintTop_toTopOf="@+id/addValues3"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues4"
+            app:layout_constraintStart_toEndOf="@+id/addValues4"
+            app:layout_constraintTop_toTopOf="@+id/addValues4"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues5"
+            app:layout_constraintStart_toEndOf="@+id/addValues5"
+            app:layout_constraintTop_toTopOf="@+id/addValues5"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues6"
+            app:layout_constraintStart_toEndOf="@+id/addValues6"
+            app:layout_constraintTop_toTopOf="@+id/addValues6"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues7"
+            app:layout_constraintStart_toEndOf="@+id/addValues7"
+            app:layout_constraintTop_toTopOf="@+id/addValues7"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues8"
+            app:layout_constraintStart_toEndOf="@+id/addValues8"
+            app:layout_constraintTop_toTopOf="@+id/addValues8"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues9"
+            app:layout_constraintStart_toEndOf="@+id/addValues9"
+            app:layout_constraintTop_toTopOf="@+id/addValues9"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/addValues10"
+            app:layout_constraintStart_toEndOf="@+id/addValues10"
+            app:layout_constraintTop_toTopOf="@+id/addValues10"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/closeValues9"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imAllClose"
+            app:layout_constraintStart_toEndOf="@+id/imAllClose"
+            app:layout_constraintTop_toTopOf="@+id/imAllClose"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/black_light"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

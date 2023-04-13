@@ -1,0 +1,236 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a3dfe97f142792ca8d1709a9469ab746",
+    "entities": [
+      {
+        "tableName": "training_items",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL, `time` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "exercise_item",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL, `type` INTEGER NOT NULL, `listId` INTEGER NOT NULL, `time` TEXT NOT NULL, `value1_1` TEXT NOT NULL, `value1_2` TEXT NOT NULL, `value1_3` TEXT NOT NULL, `value1_4` TEXT NOT NULL, `value1_5` TEXT NOT NULL, `value1_6` TEXT NOT NULL, `value1_7` TEXT NOT NULL, `value1_8` TEXT NOT NULL, `value1_9` TEXT NOT NULL, `value1_10` TEXT NOT NULL, `value2_1` TEXT NOT NULL, `value2_2` TEXT NOT NULL, `value2_3` TEXT NOT NULL, `value2_4` TEXT NOT NULL, `value2_5` TEXT NOT NULL, `value2_6` TEXT NOT NULL, `value2_7` TEXT NOT NULL, `value2_8` TEXT NOT NULL, `value2_9` TEXT NOT NULL, `value2_10` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "listId",
+            "columnName": "listId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "time",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_1",
+            "columnName": "value1_1",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_2",
+            "columnName": "value1_2",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_3",
+            "columnName": "value1_3",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_4",
+            "columnName": "value1_4",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_5",
+            "columnName": "value1_5",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_6",
+            "columnName": "value1_6",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_7",
+            "columnName": "value1_7",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_8",
+            "columnName": "value1_8",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_9",
+            "columnName": "value1_9",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value1_10",
+            "columnName": "value1_10",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_1",
+            "columnName": "value2_1",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_2",
+            "columnName": "value2_2",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_3",
+            "columnName": "value2_3",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_4",
+            "columnName": "value2_4",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_5",
+            "columnName": "value2_5",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_6",
+            "columnName": "value2_6",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_7",
+            "columnName": "value2_7",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_8",
+            "columnName": "value2_8",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_9",
+            "columnName": "value2_9",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value2_10",
+            "columnName": "value2_10",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "library_item",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a3dfe97f142792ca8d1709a9469ab746')"
+    ]
+  }
+}

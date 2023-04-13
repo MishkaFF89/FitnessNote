@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_ex">
+
+
+        <Button
+            android:id="@+id/bSaveExe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/button_ex"
+            android:text="@string/button_save_exercise"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_10" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/update_exe"
+            android:textColor="@color/black_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edNameExe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/hint_new_exercise"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageButton
+            android:id="@+id/imShowValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView1_10"
+            app:layout_constraintEnd_toStartOf="@+id/cardView2_3"
+            app:layout_constraintStart_toEndOf="@+id/cardView1_3"
+            app:layout_constraintTop_toTopOf="@+id/cardView1_10"
+            app:srcCompat="@drawable/ic_open_new_exe" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/edNameExe">
+
+            <EditText
+                android:id="@+id/edValue1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_1"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_2"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_3"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_4"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_5"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_6"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_7"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_8"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1_10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1_9"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue1_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/weight_hint"
+                android:inputType="numberDecimal"
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/edNameExe">
+
+            <EditText
+                android:id="@+id/edValue2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_1"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_2"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_3"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_4"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_5"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_7"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_6"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_8"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_7"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_8"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2_10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/bSaveExe"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2_9"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/edValue2_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/quantity_hint"
+                android:inputType="numberSigned"
+                android:visibility="visible"
+                tools:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/imCloseValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView2_10"
+            app:layout_constraintEnd_toStartOf="@+id/cardView2_10"
+            app:layout_constraintStart_toEndOf="@+id/cardView1_10"
+            app:layout_constraintTop_toTopOf="@+id/cardView2_10"
+            app:srcCompat="@drawable/ic_close_new_exe"
+            tools:visibility="visible" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

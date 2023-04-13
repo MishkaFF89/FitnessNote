@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Workout notepad</string>
+    <string name="app_main">Тренировки</string>
+
+    <string name="home">Home</string>
+    <string name="new_ex">New</string>
+    <string name="library">Библиотека</string>
+    <string name="library_empty">Библиотека пуста</string>
+
+    <string name="compare_empty">Пока нечего сравнивать</string>
+    <string name="compare">Сравни свои результаты</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="hint_new_training">Название тренировки</string>
+    <string name="button_save">Сохранить</string>
+    <string name="new_training">Новая тренировка</string>
+
+    <string name="text_km">km</string>
+    <string name="text_kg">kg</string>
+
+    <string name="new_cardio">Новое упражнение</string>
+    <string name="update_cardio">Обновить упражнение</string>
+    <string name="update">Обновить</string>
+    <string name="update_training">Обновить тренировку</string>
+    <string name="hint_new_cardio">Название упражнения</string>
+    <string name="button_save_cardio">Сохранить</string>
+    <string name="delete_list">Do you want delete this item?</string>
+
+    <string name="new_exe">Новое упражнение</string>
+    <string name="update_exe">Обновить упражнение</string>
+    <string name="hint_new_exercise">Название упражнение</string>
+    <string name="button_save_exercise">Сохранить</string>
+
+    <string name="weight_hint">Вес</string>
+    <string name="quantity_hint">Кол-во</string>
+
+    <string name="time_hint">00:00</string>
+    <string name="distance_hint">км</string>
+
+    <string name="values_time">Время</string>
+    <string name="values_distance">Расстояние</string>
+    <string name="values_weight">Вес</string>
+    <string name="values_quantity">Кол-во</string>
+
+    <string name="delete">Внимание</string>
+    <string name="delete_item">Удалить выбранный элемент?</string>
+    <string name="delete_button">Удалить</string>
+    <string name="delete_cancel">Отмена</string>
+
+
+    <string name="empty">Жми ✚ для новой тренировки</string>
+    <string name="empty_training">Жми ✚ для нового упражнения</string>
+
+
+</resources>
