@@ -18,7 +18,7 @@ Basic functions:
   <a href="https://play.google.com/store/apps/details?id=com.github.mishkaff89.fitnessnote">
     <img src="https://user-images.githubusercontent.com/118382485/231757459-1e40e26e-80a4-4470-a4d3-0954b4b2dbcf.png" awidth="40" height="40"/>
   </a>
-  <a href="your-youtube-URL">
+  <a href="https://apps.rustore.ru/app/com.github.mishkaff89.fitnessnote">
     <img src="https://user-images.githubusercontent.com/118382485/231757205-ed19b471-4a17-4bb0-862d-4d08699ab485.jpg"  width="40" height="40"/>
   </a>
   </div>
