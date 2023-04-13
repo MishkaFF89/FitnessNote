@@ -12,6 +12,17 @@ Basic functions:
   - editing 
   - compare
   - share
+
+ The APP is available on Google Play and RuStore:
+ <div id="badges">
+  <a href="https://play.google.com/store/apps/details?id=com.github.mishkaff89.fitnessnote">
+    <img src="https://user-images.githubusercontent.com/118382485/231757459-1e40e26e-80a4-4470-a4d3-0954b4b2dbcf.png" awidth="40" height="40"/>
+  </a>
+  <a href="your-youtube-URL">
+    <img src="https://user-images.githubusercontent.com/118382485/231757205-ed19b471-4a17-4bb0-862d-4d08699ab485.jpg"  width="40" height="40"/>
+  </a>
+  </div>
+
   
 ### :hammer_and_wrench: Languages and Tools :
 <img src="https://github.com/devicons/devicon/blob/master/icons/kotlin/kotlin-original.svg" title="Kotlin" alt="Kotlin" width="40" height="40"/>&nbsp;
