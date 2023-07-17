@@ -3,7 +3,6 @@ package com.github.mishkaff89.fitnessnote.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.WindowManager
 import android.view.WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE
 import android.widget.ArrayAdapter
 import androidx.activity.viewModels
@@ -39,7 +38,6 @@ class CardioActivity : AppCompatActivity() {
 
                 for (value in it){
                     arr.add(value.name)
-
                 }
                 val adapter: ArrayAdapter<String> = ArrayAdapter(this,
                     android.R.layout.simple_list_item_1, arr)
